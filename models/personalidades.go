@@ -1,11 +1,11 @@
 package models
 
 type Personalidade struct {
-	nome     string
-	historia string
+	ID          int    `json:"ID"`
+	Nome        string `json:"Nome"`
+	Cidade      string `json:"Cidade"`
+	Historia    string `json:"Historia"`
+	Ano_Criacao int16  `json:"Ano_Criacao"`
 }
 
-func main() {
-
-	print()
-}
+var Personalidades []Personalidade
