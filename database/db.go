@@ -12,7 +12,7 @@ var (
 	err error
 )
 
-func connectionDB() {
+func ConnectionDB() {
 	strconnection := "host=localhost user=bgoiania password=postgres dbname=root port=5432 sslmode=disable TimeZone=Asia/Shanghai"
 	DB, err = gorm.Open(postgres.Open(strconnection))
 	if err != nil {

@@ -1,13 +1,14 @@
 package main
 
 import (
+	"API_GO/database"
 	"API_GO/models"
 	"API_GO/routes"
 	"fmt"
 )
 
 func main() {
-	models.Personalidades = []models.Personalidade{
+	models.Todosbairros = []models.AllBairros{
 		{ID: 1, Nome: "Setor União", Cidade: "Goiânia", Ano_Criacao: 1960},
 		{ID: 2, Nome: "Vila Alpes", Cidade: "Goiânia", Ano_Criacao: 1960},
 		{ID: 3, Nome: "Jardim America", Cidade: "Goiânia", Ano_Criacao: 1952},
@@ -16,7 +17,7 @@ func main() {
 		{ID: 6, Nome: "Vila São joão", Cidade: "Goiânia", Ano_Criacao: 1968},
 		{ID: 7, Nome: "Vila Nova Esperança", Cidade: "Goiânia", Ano_Criacao: 1979},
 	}
-	database.connectionDB()
-	fmt.Println("Iniciando API em python")
+	database.ConnectionDB()
+	fmt.Println("Iniciando API em GO")
 	routes.HandleRequest()
 }
