@@ -16,6 +16,7 @@ func main() {
 		{ID: 6, Nome: "Vila São joão", Cidade: "Goiânia", Ano_Criacao: 1968},
 		{ID: 7, Nome: "Vila Nova Esperança", Cidade: "Goiânia", Ano_Criacao: 1979},
 	}
+	database.connectionDB()
 	fmt.Println("Iniciando API em python")
 	routes.HandleRequest()
 }
