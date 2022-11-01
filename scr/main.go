@@ -16,8 +16,22 @@ func main() {
 		{ID: 5, Nome: "Jardim Europa", Cidade: "Goiânia", Ano_Criacao: 1922},
 		{ID: 6, Nome: "Vila São joão", Cidade: "Goiânia", Ano_Criacao: 1968},
 		{ID: 7, Nome: "Vila Nova Esperança", Cidade: "Goiânia", Ano_Criacao: 1979},
+		{ID: 8, Nome: "Cojunto Vera Cruz", Cidade: "Goiânia", Ano_Criacao: 2000},
+		{ID: 9, Nome: "Setor Marista", Cidade: "Goiânia", Ano_Criacao: 1962},
+		{ID: 10, Nome: "Jardim Goias", Cidade: "Goiânia", Ano_Criacao: 1980},
+		{ID: 11, Nome: "Capuava", Cidade: "Goiânia", Ano_Criacao: 1950},
+		{ID: 12, Nome: "Setor Negrão de Lima", Cidade: "Goiânia", Ano_Criacao: 1967},
+		{ID: 13, Nome: "Setor Bueno", Cidade: "Goiânia", Ano_Criacao: 1988},
+		{ID: 14, Nome: "Vila Nova", Cidade: "Goiânia", Ano_Criacao: 1963},
+		{ID: 15, Nome: "Leste Universitario", Cidade: "Goiânia", Ano_Criacao: 1979},
+		{ID: 16, Nome: "Setor Central", Cidade: "Goiânia", Ano_Criacao: 1933},
+		{ID: 17, Nome: "Setor Aeroporto", Cidade: "Goiânia", Ano_Criacao: 1942},
+		{ID: 18, Nome: "Goiânia 2", Cidade: "Goiânia", Ano_Criacao: 1997},
+		{ID: 19, Nome: "Jardim Novo Mundo", Cidade: "Goiânia", Ano_Criacao: 1990},
+		{ID: 20, Nome: "Jardim Guanabara", Cidade: "Goiânia", Ano_Criacao: 1950},
 	}
 	database.ConnectionDB()
 	fmt.Println("Iniciando API em GO")
+	fmt.Println("lol lixo")
 	routes.HandleRequest()
 }

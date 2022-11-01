@@ -15,6 +15,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func TodasBairros(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
 	var p []models.AllBairros
 	database.DB.Find(&p)
 	json.NewEncoder(w).Encode(p)
